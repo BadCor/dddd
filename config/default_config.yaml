@@ -1,0 +1,76 @@
+# Default configuration for the Windows AI Voice Assistant.
+# This file is copied to the user's config location on first run.
+# Edit config/config.yaml (NOT this file) to change settings.
+
+app:
+  name: "Voice Assistant"
+  version: "0.1.0"
+  environment: "development"
+  language: "ru-RU"
+
+apps: {}
+  # Applications and code words are configured separately in config/apps.yaml.
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  log_file: "app.log"
+  max_bytes: 1048576
+  backup_count: 3
+  console_output: true
+
+llm:
+  provider: "none"
+  model: "gpt-5.6-luna"
+  endpoint: "https://api.openai.com/v1/chat/completions"
+  api_key_env_var: "ASSISTANT_LLM_API_KEY"
+  timeout: 20
+  max_response_size: 8192
+
+speech:
+  provider: "none"  # none | openai
+  model: "gpt-transcribe"
+  endpoint: "https://api.openai.com/v1/audio/transcriptions"
+  api_key_env_var: "ASSISTANT_SPEECH_API_KEY"
+  microphone_index: null
+  sample_rate: 16000
+  channels: 1
+  start_timeout: 5
+  silence_timeout: 1.2
+  max_duration: 15
+  silence_threshold: 0.015
+  block_duration: 0.2
+  recognition_timeout: 30
+  max_response_size: 65536
+  language: "ru"
+
+
+tts:
+  enabled: true
+  provider: "windows_sapi"  # windows_sapi | none
+  voice: null              # Optional installed Windows SAPI voice id
+  rate: 180
+  volume: 1.0
+  timeout: 30
+  max_chars: 2000
+
+
+discovery:
+  enabled: true
+  max_depth: 4
+  max_results: 20
+  timeout: 2.0
+  # Only these locations are searched for files/folders by default.
+  # Use {home} for the current Windows user profile.
+  search_roots:
+    files:
+      - "{home}/Downloads"
+      - "{home}/Documents"
+      - "{home}/Desktop"
+    folders:
+      - "{home}/Downloads"
+      - "{home}/Documents"
+      - "{home}/Desktop"
+  applications:
+    start_menu: true
+    registry: true

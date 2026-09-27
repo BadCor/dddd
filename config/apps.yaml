@@ -1,0 +1,15 @@
+# Кодовые слова для запуска приложений.
+# Формат: "кодовое слово": "полный путь к .exe"
+# Для одного приложения можно добавить несколько слов с одинаковым путём.
+
+"телеграм": "C:\\Program Files\\WindowsApps\\TelegramMessengerLLP.TelegramDesktop_7.2.9.0_x64__t4vj0pshhgkwm\\Telegram.exe"
+"тг": "C:\\Program Files\\WindowsApps\\TelegramMessengerLLP.TelegramDesktop_7.2.9.0_x64__t4vj0pshhgkwm\\Telegram.exe"
+telegram: "C:\\Program Files\\WindowsApps\\TelegramMessengerLLP.TelegramDesktop_7.2.9.0_x64__t4vj0pshhgkwm\\Telegram.exe"
+"майнкрафт": "C:\\Users\\user\\Downloads\\PineconeMC-Windows-MinGW-w64-Portable-11.0.3\\elyprismlauncher.exe"
+minecraft: "C:\\Users\\user\\Downloads\\PineconeMC-Windows-MinGW-w64-Portable-11.0.3\\elyprismlauncher.exe"
+ely: "C:\\Users\\user\\Downloads\\PineconeMC-Windows-MinGW-w64-Portable-11.0.3\\elyprismlauncher.exe"
+"майн": "C:\\Users\\user\\Downloads\\PineconeMC-Windows-MinGW-w64-Portable-11.0.3\\elyprismlauncher.exe"
+"провеб": "D:\\PROWEBDZ\\PROWEB.exe"
+"duo": "explorer.exe shell:AppsFolder\\D5EA27B7.Duolingo-LearnLanguagesforFree_yx6k7tf7xvsea!App"
+codex: "C:\\Users\\user\\AppData\\Local\\OpenAI\\Codex\\bin\\faa963e871dd422c\\codex.exe"
+"кодекс": "C:\\Users\\user\\AppData\\Local\\OpenAI\\Codex\\bin\\faa963e871dd422c\\codex.exe"

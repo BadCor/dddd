@@ -1,0 +1,31 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Logs (generated at runtime)
+logs/
+
+# User-specific config (generated from default_config.yaml on first run)
+config/config.yaml
+
+# Secrets - never commit API keys
+.env
+*.key
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build artifacts (later stages)
+build/
+dist/
+*.spec
